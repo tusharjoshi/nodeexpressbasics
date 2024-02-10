@@ -1,0 +1,24 @@
+{
+  "name": "nodeexpressbasics",
+  "version": "1.0.0",
+  "description": "Examples to learn concepts for Node and Express ",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tusharjoshi/nodeexpressbasics.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "Tushar Joshi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tusharjoshi/nodeexpressbasics/issues"
+  },
+  "homepage": "https://github.com/tusharjoshi/nodeexpressbasics#readme"
+}

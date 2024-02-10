@@ -6,11 +6,12 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false}));
 
 app.post('/user', (req, res, next) => {
-  res.send(`<h1>Welcome ${req.body.name}!`);
+  console.log('Post handler called');
+  res.send(`<h1>Welcome ${req.body.name} RCOEM!`);
 });
 
 app.get('/', (req, res, next) => {
-  console.log('Received request');
+  console.log('get handler called');
   console.log(req.method, req.url);
   res.send(`
   <html>

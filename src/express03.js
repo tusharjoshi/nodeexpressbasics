@@ -3,6 +3,7 @@ import express from 'express';
 const app = express();
 
 app.use((req, res, next) => {
+  console.log('middleware called');
   let body = '';
   req.on('end', () => {
     console.log(body);
@@ -18,7 +19,7 @@ app.use((req, res, next) => {
 });
 
 app.use((req, res, next) => {
-  console.log('Received request');
+  console.log('last handler request');
   console.log(req.method, req.url);
   if (req.body) {
     return res.send(`<h1>Welcome ${req.body.name}!`);

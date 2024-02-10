@@ -3,7 +3,7 @@ import myRoutes from './routes/myroutes.js';
 
 const app = express();
 
-app.use('/api/posts', myRoutes);
+app.use('/api/users', myRoutes);
 
 const port = 3000;
 app.listen(port);

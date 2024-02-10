@@ -7,6 +7,7 @@ app.use('/api/posts', postRoutes);
 
 // special error handler middleware
 app.use((error, req, res, next) => {
+  console.log('special error handler called');
   if (res.headerSent) {
     return next(error);
   }
